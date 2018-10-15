@@ -16,7 +16,9 @@ services:
 
   php:
     container_name: sf4_php
-    image: ideato:php-7.1-fpm
+    build:
+      context: ./
+      dockerfile: ./Dockerfile  
     ports:
       - 8000:8000
       - 9000:9000

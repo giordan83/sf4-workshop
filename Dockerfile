@@ -1,6 +1,6 @@
 FROM centos:latest
 
-RUN yum -y install curl wget htop bind-utils telnet vim net-tools git mysql libpng libjpeg openssl icu
+RUN yum -y install zip unzip curl wget htop bind-utils telnet vim net-tools git mysql libpng libjpeg openssl icu
 
 RUN wget https://dl.fedoraproject.org/pub/epel/epel-release-latest-7.noarch.rpm && rpm -Uvh epel-release-latest-7.*.rpm
 RUN rpm -Uvh http://rpms.famillecollet.com/enterprise/remi-release-7.rpm
